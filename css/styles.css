@@ -73,7 +73,7 @@
 }
 
 #sidebar li {
-    padding: 10px;
+    padding: 6px;
 }
 
 #sidebar a {
@@ -85,12 +85,16 @@
     margin-top: 25px;
 }
 
-.budget ul {
+.budgets ul {
     padding-left: 1em;
 }
 
 .budget-item a{
     font-size: 0.9em;
+}
+
+.budget-item a:hover{
+    font-weight: bold;
 }
 
 #main{
