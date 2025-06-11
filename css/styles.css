@@ -1,0 +1,229 @@
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    grid-auto-rows: 80px auto;
+    grid-template-areas:
+    "header header"
+    "sidebar main";
+}
+
+#header {
+    grid-area: header;
+    /*background-color: #5c9ded;*/
+    background-color: #28323c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo img{
+    height: 138px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-right: 60px;
+}
+
+.user:active,
+.user:focus,
+.user:hover{
+    color: white;
+    background-color: transparent;
+}
+
+.dropdown .btn {
+    font-weight: 550;
+    background-color: transparent;
+    border: none;
+}
+/*
+#user{
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-right: 60px;
+}
+*/
+#sidebar {
+    grid-area: sidebar;
+    background-color: #28323c;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    place-items: center;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    text-decoration: none;
+    display: grid;
+}
+
+#sidebar li {
+    padding: 10px;
+}
+
+#sidebar a {
+    color: white;
+    text-decoration: none;
+}
+
+.goals {
+    margin-top: 25px;
+}
+
+.budget ul {
+    padding-left: 1em;
+}
+
+.budget-item a{
+    font-size: 0.9em;
+}
+
+#main{
+    grid-area: main;
+    background-color: #ecf0f1;
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr;
+    gap: 20px;
+    padding: 40px;
+}
+
+/* Content column contains form and table. */
+#content{
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/**************** Form ****************/
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    padding: 30px;
+    margin: 0 60px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+form h2{
+    font-size: 1.5em;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.form-row{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.form-row label{
+    font-weight: bold;
+    text-align: left;
+    width: 150px;
+}
+
+.form-row input[type="text"]{
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #bab9b9;
+    border-radius: 5px;
+}
+
+.form-row input[type="date"]{
+    padding: 8px;
+    border: 1px solid #bab9b9;
+    border-radius: 5px;
+    width: 25%;
+}
+
+.radio-group{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#no{
+    margin-left: -100px;
+}
+
+.form-row select{
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #bab9b9;
+    border-radius: 5px;
+}
+
+form div:last-child{
+    justify-content: flex-end;
+}
+
+.form-row input[type="submit"]{
+    background-color: #28a745;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-row input[type="submit"]:hover{
+    background-color: #5c9ded;
+}
+
+/**************** Table ****************/
+#content p{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px 0;
+    padding-top: 20px;
+    text-align: center;
+}
+
+table{
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    overflow: scroll;
+}
+
+table th, table td{
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #dddddd;
+}
+
+table th{
+    background-color: #007bff;
+    color: white;
+}
+
+table tr:nth-child(odd){
+    background-color: lightgray;
+}
+
+table tr:hover{
+    background-color: #bed2ed;
+}

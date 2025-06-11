@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Savings Pro - Goals</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Savings Pro CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+<div id="container">
+      <div id="header">
+          <div id="logo">
+              <img sizes="(max-width: 1024px) 100vw, 1024px"
+                   srcset="img/savings-pro-transparent-green_euy1ln_c_scale,w_200.png 200w,
+                           img/savings-pro-transparent-green_euy1ln_c_scale,w_596.png 596w,
+                           img/savings-pro-transparent-green_euy1ln_c_scale,w_828.png 828w,
+                           img/savings-pro-transparent-green_euy1ln_c_scale,w_1020.png 1020w,
+                           img/savings-pro-transparent-green_euy1ln_c_scale,w_1022.png 1022w,
+                           img/savings-pro-transparent-green_euy1ln_c_scale,w_1024.png 1024w"
+                   src="img/savings-pro-transparent-green_euy1ln_c_scale,w_1024.png"
+                   alt="Savings Pro Logo">
+          </div>
+          <div class="dropdown">
+            <button class="user btn dropdown-toggle" type="button" id="user-menu" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-person-circle fs-3 me-2"></i>
+                <span>Jane</span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="user-menu">
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="index.html">Logout</a></li>
+            </ul>
+        </div>
+      </div>
+
+    <div id="sidebar">
+        <ul>
+            <li class="goals"><a href="goals.html">Goals</a></li>
+            <li class="budget"><a href="budget.html">Budget</a>
+                <ul>
+                  <li class="budget-item"><a href="index.html">Budget Name</a></li>
+                </ul>
+            </li>
+            <li class="reminders"><a href="reminders.html">Reminders</a></li>
+            <li class="articles"><a href="articles.html">Financial Articles</a></li>
+        </ul>
+    </div>
+
+    <div id="main">
+        <div></div>
+        <div id="content">
+            <form id="form-data">
+                <h2>Add Goal:</h2>
+                <div class="form-row">
+                    <label for="form-name">Goal Name:</label>
+                    <input type="text" id="form-name" name="form-name">
+                </div>
+                <div class="form-row">
+                    <label for="target-amount">Target Amount:</label>
+                    <input type="text" id="target-amount" name="target-amount">
+                </div>
+                <div class="form-row">
+                    <label for="remaining-amount">Remaining Target Amount:</label>
+                    <input type="text" id="remaining-amount" name="remaining-amount">
+                </div>
+
+                <div class="form-row">
+                    <label for="target-date">Target Date:</label>
+                    <input type="date" id="target-date" name="target-date">
+                </div>
+
+                <div class="form-row">
+                    <label>Long Term Goal:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="yes" name="long-term" value="Yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="long-term" value="No">
+                        <label for="no">No</label>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+
+            <p>List of Goals</p>
+            <table id="table-data">
+                <tr>
+                    <th>Goal #</th>
+                    <th>Goal Name</th>
+                    <th>Target Amount</th>
+                    <th>Remaining Target Amount</th>
+                    <th>Target Date</th>
+                    <th>Long Term Goal (Yes/No)</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Trip to Cuba</td>
+                    <td>1500</td>
+                    <td>1200</td>
+                    <td>2025-10-01</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Buy sofa</td>
+                    <td>2000</td>
+                    <td>2000</td>
+                    <td>2025-12-15</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Buy dishwasher</td>
+                    <td>600</td>
+                    <td>400</td>
+                    <td>2025-08-15</td>
+                    <td>No</td>
+                </tr>
+            </table>
+        </div>
+
+        <div></div>
+    </div>
+</div>
+</body>
+</html>
