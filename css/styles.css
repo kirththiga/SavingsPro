@@ -35,7 +35,7 @@
     display: flex;
     align-items: center;
     color: white;
-    margin-right: 60px;
+    margin-right: 50px;
 }
 
 .user:active,
@@ -50,14 +50,7 @@
     background-color: transparent;
     border: none;
 }
-/*
-#user{
-    display: flex;
-    align-items: center;
-    color: white;
-    margin-right: 60px;
-}
-*/
+
 #sidebar {
     grid-area: sidebar;
     background-color: #28323c;
@@ -166,13 +159,13 @@ form h2{
     gap: 5px;
 }
 
-#no{
-    margin-left: -100px;
+#no, #expense{
+    margin-left: -85px;
 }
 
 .form-row select{
     flex: 1;
-    padding: 8px;
+    padding: 7px;
     border: 1px solid #bab9b9;
     border-radius: 5px;
 }
