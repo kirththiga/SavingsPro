@@ -10,10 +10,11 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 8fr;
-    grid-auto-rows: 80px auto;
+    grid-auto-rows: 80px auto auto;
     grid-template-areas:
     "header header"
-    "sidebar main";
+    "sidebar main"
+    "footer footer";
 }
 
 #header {
@@ -338,10 +339,31 @@ table tr:hover{
     text-align: justify;
 }
 
-.features{
+#about-image img{
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.about-row{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+}
+
+.features {
     width: 450px;
     margin: 0;
     gap: 20px;
     padding: 40px;
     border-radius: 10px;
+}
+
+footer{
+    grid-area: footer;
+    background-color: #28323c;
+    color: white;
+    min-height: 60px;
+    padding: 20px;
 }

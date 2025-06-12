@@ -15,7 +15,7 @@
 
 <body>
 <div id="container">
-    <div id="header">
+    <header id="header">
         <div id="logo">
             <a href="index.html">
                 <img sizes="(max-width: 1024px) 100vw, 1024px"
@@ -36,7 +36,7 @@
                 <a href="login.html">Login</a>
             </button>
         </div>
-    </div>
+    </header>
 
     <div id="sidebar-login"></div>
 
@@ -55,20 +55,38 @@
                     offering expert tips and advice to support your journey toward financial wellness.</p>
             </section>
 
-            <section class="form-data features">
-                    <h2>Features</h2>
-                    <ul>
-                        <li>Personalized budgets</li>
-                        <li>Track expenses</li>
-                        <li>Reminders for payment</li>
-                        <li>Financial goals</li>
-                        <li>Financial articles</li>
-                    </ul>
-            </section>
+            <div class="about-row">
+                <section class="form-data features">
+                        <h2>Features</h2>
+                        <ul>
+                            <li>Personalized budgets</li>
+                            <li>Track expenses</li>
+                            <li>Reminders for payment</li>
+                            <li>Financial goals</li>
+                            <li>Financial articles</li>
+                        </ul>
+                </section>
+
+                <div id="about-image">
+                    <img sizes="(max-width: 1000px) 100vw, 1000px"
+                         srcset="img/about_ab9ysc_c_scale,w_200.jpg 200w,
+                                 img/about_ab9ysc_c_scale,w_594.jpg 594w,
+                                 img/about_ab9ysc_c_scale,w_920.jpg 920w,
+                                 img/about_ab9ysc_c_scale,w_1000.jpg 1000w"
+                            src="img/about_ab9ysc_c_scale,w_1000.jpg"
+                            alt="Budget Tool Image">
+                </div>
+            </div>
         </div>
 
         <div></div>
     </div>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <p>&copy; 2025 Savings Pro. All rights reserved.</p>
+        </div>
+    </footer>
 </div>
 </body>
 </html>
