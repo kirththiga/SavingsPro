@@ -146,11 +146,17 @@ form h2{
     border-radius: 5px;
 }
 
+.form-row input[type="number"]{
+    padding: 8px;
+    border: 1px solid #bab9b9;
+    border-radius: 5px;
+}
+
 .form-row input[type="date"]{
     padding: 8px;
     border: 1px solid #bab9b9;
     border-radius: 5px;
-    width: 25%;
+    width: 30%;
 }
 
 .radio-group{
@@ -186,6 +192,24 @@ form div:last-child{
 
 .form-row input[type="submit"]:hover{
     background-color: #5c9ded;
+}
+
+/**************** Settings Forms ****************/
+.password-form,
+.reminder-form{
+    width: 60%;
+}
+
+/**************** Summary Table ****************/
+.form-summary{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.summary-section{
+    min-width: 250px;
 }
 
 /**************** Table ****************/

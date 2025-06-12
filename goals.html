@@ -30,10 +30,10 @@
           <div class="dropdown">
             <button class="user btn dropdown-toggle" type="button" id="user-menu" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="bi bi-person-circle fs-3 me-2"></i>
-                <span>Jane</span>
+                <span>Emma</span>
             </button>
             <ul class="dropdown-menu" aria-labelledby="user-menu">
-                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="settings.html">Settings</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="index.html">Logout</a></li>
             </ul>
@@ -58,7 +58,7 @@
     <div id="main">
         <div></div>
         <div id="content">
-            <form id="form-data">
+            <form class="form-data">
                 <h2>Add Goal:</h2>
                 <div class="form-row">
                     <label for="form-name">Goal Name:</label>
@@ -66,11 +66,11 @@
                 </div>
                 <div class="form-row">
                     <label for="target-amount">Target Amount:</label>
-                    <input type="text" id="target-amount" name="target-amount">
+                    <input type="number" id="target-amount" name="target-amount">
                 </div>
                 <div class="form-row">
                     <label for="remaining-amount">Remaining Target Amount:</label>
-                    <input type="text" id="remaining-amount" name="remaining-amount">
+                    <input type="number" id="remaining-amount" name="remaining-amount">
                 </div>
 
                 <div class="form-row">
