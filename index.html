@@ -15,19 +15,26 @@
 
 <body>
 <div id="container">
-      <div id="header">
-          <div id="logo">
-              <img sizes="(max-width: 1024px) 100vw, 1024px"
-                   srcset="img/savings-pro-transparent-green_euy1ln_c_scale,w_200.png 200w,
+    <div id="header">
+        <div id="logo">
+            <img sizes="(max-width: 1024px) 100vw, 1024px"
+                 srcset="img/savings-pro-transparent-green_euy1ln_c_scale,w_200.png 200w,
                            img/savings-pro-transparent-green_euy1ln_c_scale,w_596.png 596w,
                            img/savings-pro-transparent-green_euy1ln_c_scale,w_828.png 828w,
                            img/savings-pro-transparent-green_euy1ln_c_scale,w_1020.png 1020w,
                            img/savings-pro-transparent-green_euy1ln_c_scale,w_1022.png 1022w,
                            img/savings-pro-transparent-green_euy1ln_c_scale,w_1024.png 1024w"
-                   src="img/savings-pro-transparent-green_euy1ln_c_scale,w_1024.png"
-                   alt="Savings Pro Logo">
-          </div>
-      </div>
+                 src="img/savings-pro-transparent-green_euy1ln_c_scale,w_1024.png"
+                 alt="Savings Pro Logo">
+        </div>
+
+        <div class="dropdown">
+            <button class="user btn" type="button">
+                <i class="bi bi-person-circle fs-3 me-2"></i>
+                <a href="login.html">Login</a>
+            </button>
+        </div>
+    </div>
 
     <div id="sidebar-login">
     </div>
@@ -36,26 +43,27 @@
         <div></div>
 
         <div id="content">
-            <form class="form-data login-form">
-                <h2>Login</h2>
-                <div class="form-row">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="john@mail.com">
-                </div>
-                <div class="form-row">
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password">
-                </div>
+            <section id="about">
+                <h2>About</h2>
+                <p>Savings Pro is a smart and simple budgeting and finance app designed to help you take
+                    control of your money. With an easy-to-use interface, you can track your income and
+                    expenses, set personalized financial goals, and create monthly budgets to stay on
+                    target. Whether you’re saving for a vacation, paying off debt, or just trying to manage
+                    your day-to-day spending, Savings Pro gives you the tools to make confident financial
+                    decisions. Plus, you’ll have access to a curated library of helpful financial articles,
+                    offering expert tips and advice to support your journey toward financial wellness.</p>
+            </section>
 
-                <div class="form-row">
-                    <input type="submit" value="Login">
-                </div>
-
-                <div class="form-row login-links">
-                    <p>Don't have an account yet? <a href="register.html">Create Account</a></p>
-                    <p><a href="forgot-password.html">Forgot your password?</a></p>
-                </div>
-            </form>
+            <section class="form-data features">
+                    <h2>Features</h2>
+                    <ul>
+                        <li>Personalized budgets</li>
+                        <li>Track expenses</li>
+                        <li>Reminders for payment</li>
+                        <li>Financial goals</li>
+                        <li>Financial articles</li>
+                    </ul>
+            </section>
         </div>
 
         <div></div>
