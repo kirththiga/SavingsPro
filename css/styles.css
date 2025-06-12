@@ -10,7 +10,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 8fr;
-    grid-auto-rows: 80px auto auto;
+    grid-auto-rows: 80px auto 80px;
     grid-template-areas:
     "header header"
     "sidebar main"
@@ -366,4 +366,15 @@ footer{
     color: white;
     min-height: 60px;
     padding: 20px;
+}
+
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.about-footer{
+    margin-top: 10px;
 }
