@@ -185,7 +185,7 @@
     border-radius: 5px;
 }
 
-form-data div:last-child{
+.form-data div:last-child{
     justify-content: flex-end;
 }
 
