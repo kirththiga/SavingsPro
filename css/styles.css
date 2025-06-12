@@ -236,7 +236,7 @@ form-data div:last-child{
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: 0.6em;
+    font-size: 0.7em;
 }
 
 .login-links a{
@@ -277,7 +277,7 @@ form-data div:last-child{
 }
 
 /**************** Table ****************/
-#content p{
+#content h3{
     font-size: 1.5em;
     font-weight: bold;
     margin: 10px 0;
@@ -314,9 +314,17 @@ table tr:hover{
 }
 
 /**************** Index Page ****************/
+#about h2{
+    font-weight: bold;
+}
+
+#about p{
+    text-align: justify;
+}
+
 .features{
     width: 450px;
-    margin: 60px;
+    margin: 0;
     gap: 20px;
     padding: 40px;
     border-radius: 10px;

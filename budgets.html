@@ -15,19 +15,22 @@
 
 <body>
 <div id="container">
-      <div id="header">
-          <div id="logo">
-              <img sizes="(max-width: 1024px) 100vw, 1024px"
-                   srcset="img/savings-pro-transparent-green_euy1ln_c_scale,w_200.png 200w,
-                           img/savings-pro-transparent-green_euy1ln_c_scale,w_596.png 596w,
-                           img/savings-pro-transparent-green_euy1ln_c_scale,w_828.png 828w,
-                           img/savings-pro-transparent-green_euy1ln_c_scale,w_1020.png 1020w,
-                           img/savings-pro-transparent-green_euy1ln_c_scale,w_1022.png 1022w,
-                           img/savings-pro-transparent-green_euy1ln_c_scale,w_1024.png 1024w"
-                   src="img/savings-pro-transparent-green_euy1ln_c_scale,w_1024.png"
-                   alt="Savings Pro Logo">
-          </div>
-          <div class="dropdown">
+    <div id="header">
+        <div id="logo">
+            <a href="index.html">
+                <img sizes="(max-width: 1024px) 100vw, 1024px"
+                     srcset="img/savings-pro_euy1ln_c_scale,w_200.png 200w,
+                            img/savings-pro_euy1ln_c_scale,w_596.png 596w,
+                            img/savings-pro_euy1ln_c_scale,w_828.png 828w,
+                            img/savings-pro_euy1ln_c_scale,w_1020.png 1020w,
+                            img/savings-pro_euy1ln_c_scale,w_1022.png 1022w,
+                            img/savings-pro_euy1ln_c_scale,w_1024.png 1024w"
+                     src="img/savings-pro_euy1ln_c_scale,w_1024.png"
+                     alt="Savings Pro Logo">
+            </a>
+        </div>
+		
+        <div class="dropdown">
             <button class="user btn dropdown-toggle" type="button" id="user-menu" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="bi bi-person-circle fs-3 me-2"></i>
                 <span>Emma</span>
@@ -38,7 +41,7 @@
                 <li><a class="dropdown-item" href="index.html">Logout</a></li>
             </ul>
         </div>
-      </div>
+    </div>
 
     <div id="sidebar">
         <ul>
@@ -95,7 +98,7 @@
                 </div>
             </form>
 
-            <p>List of Budgets</p>
+            <h3>List of Budgets</h3>
             <table id="table-data">
                 <tr>
                     <th>Budget #</th>
