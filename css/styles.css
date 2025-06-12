@@ -143,7 +143,9 @@ form h2{
     width: 150px;
 }
 
-.form-row input[type="text"]{
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="password"]{
     flex: 1;
     padding: 8px;
     border: 1px solid #bab9b9;
@@ -198,6 +200,49 @@ form div:last-child{
     background-color: #5c9ded;
 }
 
+/**************** Settings Forms ****************/
+.login-form{
+    width: 450px;
+    margin: 60px auto;
+    gap: 20px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.login-form h2{
+    font-size: 1.8em;
+    color: black;
+    border: none;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.login-form .form-row{
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+}
+
+.login-form label{
+    width: 100%;
+}
+
+.login-links{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.6em;
+}
+
+.login-links a{
+    text-decoration: none;
+}
+
+.login-links a:hover{
+    text-decoration: underline;
+}
 /**************** Settings Forms ****************/
 .password-form,
 .reminder-form{
