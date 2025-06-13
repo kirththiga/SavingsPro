@@ -81,6 +81,10 @@
     text-decoration: none;
 }
 
+#sidebar a:hover {
+    font-weight: bold;
+}
+
 .goals {
     margin-top: 25px;
 }
@@ -91,10 +95,6 @@
 
 .budget-item a{
     font-size: 0.9em;
-}
-
-.budget-item a:hover{
-    font-weight: bold;
 }
 
 #main{
@@ -121,9 +121,10 @@
     gap: 20px;
     background-color: white;
     padding: 30px;
-    margin: 0 60px;
+    margin: 0 75px;
     border-radius: 10px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    width: 500px;
 }
 
 .form-data h2{
@@ -138,6 +139,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    width: 425px;
 }
 
 .form-row label{
