@@ -61,8 +61,8 @@
 #sidebar {
     grid-area: sidebar;
     background-color: #28323c;
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    display: flex;
+    flex-direction: column;
     place-items: center;
 }
 
@@ -344,6 +344,13 @@ table tr:hover{
     background-color: #bed2ed;
 }
 
+#table-data a{
+    text-decoration: none;
+}
+
+#table-data a:hover{
+    font-weight: bold;
+}
 /**************** Index Page ****************/
 #about h2{
     font-weight: bold;
