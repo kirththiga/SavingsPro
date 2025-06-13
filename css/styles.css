@@ -208,6 +208,19 @@
     margin: 0;
 }
 
+form:has(#income:checked) .expense-fields select{
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+form:has(#income:checked) .expense-rating{
+    display: none;
+}
+
+form:has(#expense:checked) .income-fields select{
+    pointer-events: none;
+    opacity: 0.5;
+}
 /**************** Settings Forms ****************/
 .login-form{
     width: 450px;
