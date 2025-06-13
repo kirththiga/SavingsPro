@@ -69,7 +69,6 @@
 #sidebar ul {
     list-style-type: none;
     text-decoration: none;
-    display: grid;
 }
 
 #sidebar li {
